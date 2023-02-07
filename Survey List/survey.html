@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="survey.css">
+
+  <script>
+    function myFunction1(){
+      var newname = document.getElementById("fname").value;
+    }
+
+    function myFunction2(){
+      var newname = document.getElementById("lname").value;
+    }
+
+    function myDropDown(){
+      var newname = document.getElementById("dropdown").value;
+    }
+
+    function myRadioButton(){
+      var newname = document.getElementById("radioButton").value;
+    }
+
+    function myCheckBox(){
+      var newname = document.getElementById("checkbox").value;
+    }
+
+    function myTextField(){
+      var newname = document.getElementById("textfield").value;
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Favorite Ocean Animals Survey</h1>
+
+  <form>
+
+  <div></div>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname"><br>
+  </div>
+  
+  
+  <br>
+  
+  <div>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname"><br>
+  </div>
+  
+
+  <br><br>
+
+  <div>
+    <label for="dropdown">Choose a shark:</label>
+    <select name="dropdown" id="dropdown">
+      <option value="Great White">Great White</option>
+      <option value="Hammer Head">Hammer Head</option>
+      <option value="Lemon">Lemon</option>
+      <option value="Tiger">Tiger</option>
+    </select>
+  </div>
+
+  <br> 
+
+  <div>
+    <p>Choose a whale:</p>
+    <label for="radioButton">Blue Whale</label>
+    <input type="radio" id="radioButton" name="radioButton"><br>
+    <label for="radioButton">Humpback Whale</label>
+    <input type="radio" id="radioButton" name="radioButton"><br>
+    <label for="radioButton">Orca Whale</label>
+    <input type="radio" id="radioButton" name="radioButton"><br>
+    <label for="radioButton">Beluga Whale</label>
+    <input type="radio" id="radioButton" name="radioButton"><br>
+  </div>
+
+  <br><br>
+
+  <div>
+    <p>Choose a fish:</p>
+    <label for="checkbox">Tuna Fish</label>
+    <input type="checkbox" id="checkbox" name="checkbox">
+    <label for="checkbox">Sword Fish</label>
+    <input type="checkbox" id="checkbox" name="checkbox">
+    <label for="checkbox">Blue Marlin</label>
+    <input type="checkbox" id="checkbox" name="checkbox">
+    <label for="checkbox">Barracuda</label>
+    <input type="checkbox" id="checkbox" name="checkbox">
+  </div>
+
+  <br><br>
+
+  <div>
+    <textarea name="comment" id="comment" placeholder="Comments"></textarea>
+  </div>
+
+  <button type="submit" value="submit">Submit</button>
+  
+</form>  
+  
+</body>
+</html>
